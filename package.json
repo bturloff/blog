@@ -1,0 +1,25 @@
+{
+  "name": "mean-blog",
+  "version": "1.0.0",
+  "description": "Practice blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bturloff/blog.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Brian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bturloff/blog/issues"
+  },
+  "homepage": "https://github.com/bturloff/blog#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

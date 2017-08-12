@@ -1,11 +1,22 @@
-<html lang="en">
+<html lang="en" ng-app="blogapp">
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="app.js">
+
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello from me</h1>
+  <div class="container" ng-controller="BlogController">
+    <h1>Blog</h1>
+    <input ng-model="post.title" class="form-control" placeholder="title" type="text" name="title">
+    <textarea ng-model = "post.body" class="form-control" placeholder="text" name="name" rows="8" cols="80"></textarea>
+    <button ng-click="createPost(post)" class="btn btn-primary btn-block" type="button" name="post">post</button>
+  </div>
+
 </body>
 </html>
